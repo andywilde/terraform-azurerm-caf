@@ -65,10 +65,12 @@ aks_clusters = {
         key = "aks_nodepool_system"
         #resource_id = "/subscriptions/97958dac-xxxx-xxxx-xxxx-9f436fa73bd4/resourceGroups/qxgc-rg-aks-re1/providers/Microsoft.Network/virtualNetworks/qxgc-vnet-aks/subnets/qxgc-snet-aks_nodepool_system"
       }
-      enabled_auto_scaling  = false
+      enable_auto_scaling  = true
       enable_node_public_ip = false
       max_pods              = 30
-      node_count            = 1
+      node_count            = null
+      min_count             = 1
+      max_count             = 3
       os_disk_size_gb       = 512
       tags = {
         "project" = "system services"
