@@ -1,7 +1,7 @@
 global_settings = {
   default_region = "region1"
   regions = {
-    region1 = "australiaeast"
+    region1 = "uksouth"
   }
 }
 
@@ -28,6 +28,8 @@ aks_clusters = {
       network_plugin    = "azure"
       load_balancer_sku = "Standard"
     }
+    
+    private_cluster_enabled = true
 
     # enable_rbac = true
     role_based_access_control = {
