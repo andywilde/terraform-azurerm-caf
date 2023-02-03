@@ -21,6 +21,7 @@ aks_clusters = {
     identity = {
       type = "SystemAssigned"
     }
+    kubernetes_version="1.23.8"
 
     vnet_key = "spoke_aks_re1"
 
